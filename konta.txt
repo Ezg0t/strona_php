@@ -1,0 +1,4 @@
+dane logowania z dostępem admina:
+login:admin  |  hasło:admin
+dane logowania z dostępem zwykłego użytkownika:
+login:useruser |  hasło:useruser

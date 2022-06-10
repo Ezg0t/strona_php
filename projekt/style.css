@@ -1,0 +1,533 @@
+            .pasek {
+text-align:right;
+				color:grey;
+background-image: url('tlo.jpg');
+}
+			body {
+                background: white;
+                position: relative;
+                margin: 0;
+                width: 100%;
+                font-family: 'century gothic';
+            }
+            
+            img {
+                width: 100%;
+                margin: auto;
+                margin-bottom: -5px;
+            }
+            .navbar
+{
+	min-height: 57px;
+}
+
+
+            .nav {
+                font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+                color: rgba(0, 0, 0, 0.7);
+                text-shadow: 3px 3px 3px #fff;
+                font-size: 20px;
+                text-align: center;
+                overflow: hidden;
+                width: 100%;
+                position: relative;
+                background: whitesmoke;
+                -webkit-box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 100px 8px rgba(0, 0, 0, 0.75);
+            }
+            
+            .nav a {
+                display: block;
+                position: relative;
+                float: left;
+                padding: 16px 0 20px;
+                width: 25%;
+                text-decoration: none;
+                color: #393939;
+            }
+            
+            .nav a:hover {
+                text-shadow: 0 0 3px black, 0 0 5px white;
+            }
+            
+            .current {
+                text-shadow: 0 0 3px black, 0 0 5px white;
+            }
+
+
+            
+            .menu .podkresl {
+                width: 100%;
+                height: 5px;
+                background: url('Obrazy/rainbow.jpg');
+                margin-top: 3.5%;
+            }
+            
+            footer {
+                color: white;
+                background: black;
+                display: flex;
+                -webkit-box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 100px 8px rgba(0, 0, 0, 0.75);
+                justify-content: center;
+                text-align: center;
+                clear: both;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+            }
+            
+            .sekcja {
+                width: 40%;
+                height: 1000px;
+                margin-bottom: 50px;
+            }
+            
+            .sekcja1 {
+                width: 59%;
+                height: 1000px;
+                margin-bottom: 50px;
+                display: inline-block;
+            }
+            
+            .icon {
+                width: 40px;
+                height: 40px;
+                margin: 5px;
+                border: 0;
+            }
+            
+            .naglowek {
+                font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+                font-size: 18px;
+                text-align: center;
+            }
+            
+            .column {
+                float: left;
+                width: 14.28%;
+                margin-bottom: -4px;
+            }
+            
+            .row::after {
+                clear: both;
+            }
+            
+            .zdjecia {
+                margin: 10px;
+                width: 70%;
+                display: inline-block;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .sekcja {
+                float: left;
+                padding: 10px;
+                height: 300px;
+            }
+            
+            .lewa {
+                width: 40%;
+                height: auto;
+                text-align: center;
+            }
+            
+            .prawa {
+                width: 60%;
+                height: auto;
+                text-align: center;
+            }
+            
+            .sekcje:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            .media {
+                text-align: center;
+            }
+            
+            .historia {
+                word-wrap: break-word;
+                width: 550px;
+                text-align: left;
+                margin: 0 auto;
+                font-family: 'Century Gothic';
+            }
+            
+            .left {
+                font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+                font-size: 20px;
+                text-align: left;
+                margin: 20px;
+            }
+            
+            .slideshow-container {
+                max-width: 800px;
+                position: relative;
+                margin: auto;
+            }
+            
+            .Slider {
+                display: none;
+            }
+            
+            .popr,
+            .nast {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            
+            .nast {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            
+            .popr {
+                left: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            
+            .popr:hover,
+            .nast:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            .text {
+                background: black;
+                opacity: 0.7;
+                font-family: 'Century Gothic';
+                color: whitesmoke;
+                font-size: 18px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .kropka {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            
+            .active,
+            .kropka:hover {
+                background-color: #717171;
+            }
+            
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            
+            .videoWrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 25px;
+                height: 0;
+            }
+            
+            .videoWrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            
+            span:after {
+                clear: both;
+                content: "";
+                display: block;
+            }
+            
+            .obraz2 {
+                width: 500px;
+                margin-right: 20px;
+                vertical-align: middle;
+                float: left;
+            }
+            
+            li {
+                display: inline-block;
+            }
+            
+            ul {
+                list-style-type: none;
+            }
+            
+            .img {
+                border-radius: 100%;
+                color: #fafafa;
+                display: flex;
+                height: 160px;
+                justify-content: center;
+                overflow: hidden;
+                position: relative;
+                width: 160px;
+                margin-left: 30px;
+            }
+            
+            .img__overlay {
+                align-items: center;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: opacity 0.25s;
+                z-index: 1;
+            }
+            
+            .img__overlay:hover {
+                opacity: 1;
+            }
+            
+            .img__overlay {
+                background-color: rgba(0, 0, 0, 0.4);
+                color: #fafafa;
+                font-size: 24px;
+            }
+            
+            @-webkit-keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            
+            .zawartosc {
+                background: black;
+                width: 100%;
+            }
+            
+            .container1 {
+                position: relative;
+                width: 100%;
+            }
+            
+            .image1 {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+            .overlay1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            
+            .container1:hover .overlay1 {
+                opacity: 1;
+            }
+            
+            .text1 {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            
+            .ikona {
+                width: 100px;
+                height: auto;
+                margin: 20px;
+                text-align: center;
+            }
+            
+            .srodek {
+                background: rgba(230, 230, 230, 0.945);
+                height: auto;
+                width: 70%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            a.info {
+                position: relative;
+                color: #000;
+                text-decoration: none
+            }
+            
+            a.info span {
+                display: none
+            }
+            
+            a.info:hover span {
+                display: block;
+                position: absolute;
+                top: 40px;
+                right: 20px;
+                width: 600px;
+                background-color: rgba(255, 255, 255, 1);
+                text-align: left;
+                z-index: 1;
+                font-size: 15px;
+            }
+            
+            .obraz {
+                position: relative;
+                display: inline-block;
+                margin-right: 8px;
+            }
+            
+            .obraz .obraztext {
+                visibility: hidden;
+                height: auto;
+                background-color: rgba(255, 255, 255, 0.2);
+                color: black;
+                text-align: center;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            
+            .obraz .obraztext::after {
+                position: absolute;
+            }
+            
+            .obraz:hover .obraztext {
+                visibility: visible;
+                opacity: 1;
+                text-align: left;
+            }
+            
+            .obraztext {
+                font-size: 14px;
+                word-wrap: break-word;
+                width: 400px;
+            }
+			
+            
+            #panel,
+            .flip {
+                font-size: 16px;
+                padding: 10px;
+                text-align: center;
+                color: white;
+                margin: auto;
+                display: inline-block;
+            }
+            
+            #panel {
+                width: 600px;
+                font-size: 15px;
+                font-family: 'Century Gothic';
+            }
+            
+            #panel1,
+            .przycisk {
+                font-size: 20px;
+                font-family: 'Century Gothic';
+                padding: 10px;
+                text-align: center;
+                color: black;
+                margin: auto;
+                display: inline-block;
+            }
+            
+            .przycisk {
+                background-color: white;
+                border: 0;
+            }
+            
+            .przycisk:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+                color: white;
+            }
+            
+            #panel1 {
+                display: none;
+                width: 600px;
+            }
+            
+            #grey {
+                opacity: 0.2;
+            }
+            
+            .drzewo1,
+            .drzewo2 {
+                display: inline-block;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            
+            .build,
+            .runy {
+                font-size: 19px;
+                display: inline-block;
+                position: relative;
+            }
